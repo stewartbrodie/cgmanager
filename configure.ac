@@ -3,6 +3,8 @@
 AC_PREREQ(2.61)
 AC_INIT([cgmanager], [0.36], [cgmanager-devel@lists.linuxcontainers.org])
 
+AM_INIT_AUTOMAKE
+
 AC_GNU_SOURCE
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([
@@ -15,8 +17,6 @@ AC_CONFIG_FILES([
 	config/init/upstart/sessions/Makefile
 	libcgmanager.pc.in
 	cgmanager.spec])
-
-AM_INIT_AUTOMAKE
 
 LT_INIT
 AC_PROG_CC
